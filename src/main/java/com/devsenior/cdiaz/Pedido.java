@@ -26,5 +26,11 @@ public class Pedido {
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
     }
-    
+
+    @Override
+    public String toString() {
+        return String.format("Pedido {cliente: %s, producto: %s, cantidad: %d}",
+                clienteId, producto, cantidad);
+    }
+
 }

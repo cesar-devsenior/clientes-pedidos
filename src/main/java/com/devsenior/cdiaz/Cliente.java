@@ -16,4 +16,9 @@ public class Cliente {
     public String getNombre() {
         return nombre;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Cliente {id: %s, nombre: %s}", id, nombre);
+    }
 }
